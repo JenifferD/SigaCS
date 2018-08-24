@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="486.0" prefWidth="559.0" styleClass="fondo" stylesheets="/estilo.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ec.com.controlador.VistaInicioSesionController">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox maxHeight="200.0" prefHeight="100.0" prefWidth="100.0" styleClass="fondobanner" />
+            <HBox prefHeight="70.0" prefWidth="559.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="54.0" prefWidth="561.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label text="INICIO DE SESIÓN">
+                           <font>
+                              <Font name="Lucida Fax Demibold" size="25.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0">
+               <children>
+                  <VBox alignment="CENTER" prefHeight="63.0" prefWidth="559.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <ImageView fitHeight="111.0" fitWidth="104.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true" styleClass="img_user">
+                           <image>
+                              <Image url="/img_user.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </VBox>
+               </children></HBox>
+            <HBox alignment="CENTER" prefHeight="302.0">
+               <children>
+                  <Pane prefHeight="229.0" prefWidth="331.0" styleClass="">
+                     <children>
+                        <Label layoutX="45.0" layoutY="34.0" text="Usuario">
+                           <font>
+                              <Font name="Lucida Sans Typewriter Bold" size="15.0" />
+                           </font></Label>
+                        <TextField fx:id="txt_usuario" layoutX="45.0" layoutY="57.0" prefHeight="24.960737500005052" prefWidth="250.0" promptText="Digite su Usuario" style="-fx-border-color: #3399CC" />
+                        <Label layoutX="43.0" layoutY="99.0" text="Clave">
+                           <font>
+                              <Font name="Lucida Sans Typewriter Bold" size="15.0" />
+                           </font></Label>
+                        <PasswordField fx:id="txt_contraseña" layoutX="45.0" layoutY="122.0" prefHeight="24.960845947265625" prefWidth="250.0" promptText="Digite su Clave" style="-fx-border-color: #3399CC" />
+                        <Button fx:id="bt_entrar" layoutX="66.0" layoutY="197.0" mnemonicParsing="false" onAction="#aceptar" prefWidth="84.0" styleClass="" text="Entrar" wrapText="true">
+                           <font>
+                              <Font name="Lucida Sans Typewriter Bold" size="12.0" />
+                           </font></Button>
+                        <Button fx:id="bt_cancelar" layoutX="179.0" layoutY="197.0" mnemonicParsing="false" onAction="#cancelar" prefWidth="84.0" styleClass="" text="Cancelar">
+                           <font>
+                              <Font name="Lucida Sans Typewriter Bold" size="12.0" />
+                           </font></Button>
+                     </children>
+                  </Pane>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

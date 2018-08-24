@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane layoutX="49.0" layoutY="51.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="58.0" minHeight="58.0" prefHeight="58.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="SOLICITUD DE ASIGNACIÓN" GridPane.halignment="CENTER">
+               <font>
+                  <Font name="Lucida Fax Demibold" size="27.0" />
+               </font>
+            </Label>
+            <TabPane prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" GridPane.rowIndex="1">
+              <tabs>
+                <Tab text="Solicitud">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <GridPane layoutX="81.0" layoutY="54.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <columnConstraints>
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" />
+                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="160.0" minWidth="160.0" prefWidth="160.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="80.0" prefWidth="80.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="40.0" minWidth="40.0" prefWidth="40.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="20.0" minWidth="20.0" prefWidth="20.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="140.0" minWidth="140.0" prefWidth="140.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="80.0" prefWidth="80.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="40.0" minWidth="40.0" prefWidth="40.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" />
+                                </columnConstraints>
+                                <rowConstraints>
+                                  <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                </rowConstraints>
+                                 <children>
+                                    <Label text="Fecha :" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <TextField GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+                                    <Label text="Cédula del Afiliado :" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <TextField GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                                    <Button fx:id="bt_buscar" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#buscar_predios" prefHeight="25.0" prefWidth="29.0" text="?" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="2" />
+                                    <Label text="Nombre del Predio :" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                                    <TextField GridPane.columnIndex="6" GridPane.rowIndex="2" />
+                                    <Button fx:id="bt_buscar1" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#buscar_predios" prefHeight="25.0" prefWidth="29.0" text="?" GridPane.columnIndex="7" GridPane.halignment="RIGHT" GridPane.rowIndex="2" />
+                                    <TextField GridPane.columnIndex="6" GridPane.columnSpan="2" GridPane.rowIndex="1" />
+                                    <Label text="N° de Solicitud :" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                                    <Label text="Ruta de Documento :" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                    <TextField GridPane.columnIndex="2" GridPane.columnSpan="5" GridPane.rowIndex="4">
+                                       <GridPane.margin>
+                                          <Insets right="20.0" />
+                                       </GridPane.margin>
+                                    </TextField>
+                                    <Button mnemonicParsing="false" text="Subir" GridPane.columnIndex="6" GridPane.columnSpan="2" GridPane.halignment="RIGHT" GridPane.rowIndex="4" />
+                                    <Label text="Estado de la Asignacion :" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                                    <ComboBox prefWidth="150.0" GridPane.columnIndex="6" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+                                    <Label text="Resolución de la Asignación :" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                    <ComboBox prefWidth="150.0" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="3" />
+                                    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" styleClass="botones_g_n" GridPane.columnIndex="1" GridPane.columnSpan="7" GridPane.rowIndex="6" GridPane.rowSpan="2">
+                                       <children>
+                                          <Button fx:id="bt_guardar" alignment="BOTTOM_CENTER" contentDisplay="TOP" ellipsisString="" graphicTextGap="0.0" maxHeight="95.0" minHeight="50.0" mnemonicParsing="false" onAction="#grabar" prefHeight="95.0" prefWidth="100.0" styleClass="botonguardar" text="Guardar">
+                                             <HBox.margin>
+                                                <Insets left="10.0" />
+                                             </HBox.margin>
+                                          </Button>
+                                          <Button fx:id="bt_nuevo" alignment="BOTTOM_CENTER" contentDisplay="TOP" ellipsisString="" graphicTextGap="0.0" maxHeight="95.0" minHeight="50.0" mnemonicParsing="false" onAction="#nuevo" prefHeight="95.0" prefWidth="100.0" styleClass="botonNuevo" text="Nuevo">
+                                             <HBox.margin>
+                                                <Insets left="150.0" />
+                                             </HBox.margin>
+                                          </Button>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                  <Tab fx:id="tb_listado_usu" text="Listado de Afiliados">
+                     <content>
+                        <AnchorPane>
+                           <children>
+                              <GridPane layoutY="-22.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <TableView fx:id="tv_usuarios" prefHeight="171.0" prefWidth="557.0" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="3" />
+                                    <Label text="BUSCAR:" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                                    <TextField fx:id="txt_buscar" prefHeight="25.0" prefWidth="409.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                       <GridPane.margin>
+                                          <Insets left="80.0" />
+                                       </GridPane.margin>
+                                    </TextField>
+                                 </children>
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="150.0" prefWidth="150.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="269.0" prefWidth="269.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="150.0" prefWidth="150.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints maxHeight="53.0" minHeight="53.0" prefHeight="53.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="250.0" prefHeight="250.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab fx:id="tb_listado_usu1" text="Listado de Predios">
+                     <content>
+                        <AnchorPane>
+                           <children>
+                              <GridPane layoutY="-22.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <children>
+                                    <TableView fx:id="tv_usuarios1" prefHeight="171.0" prefWidth="557.0" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="3" />
+                                    <Label text="BUSCAR:" GridPane.columnIndex="2" GridPane.halignment="LEFT" GridPane.rowIndex="1" GridPane.valignment="CENTER" />
+                                    <TextField fx:id="txt_buscar1" prefHeight="25.0" prefWidth="375.0" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1" GridPane.valignment="CENTER">
+                                       <GridPane.margin>
+                                          <Insets left="80.0" />
+                                       </GridPane.margin>
+                                    </TextField>
+                                 </children>
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="150.0" prefWidth="150.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="269.0" prefWidth="269.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="150.0" prefWidth="150.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="70.0" minWidth="70.0" prefWidth="70.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints maxHeight="53.0" minHeight="53.0" prefHeight="53.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="250.0" prefHeight="250.0" vgrow="SOMETIMES" />
+                                    <RowConstraints maxHeight="40.0" minHeight="40.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                              </GridPane>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

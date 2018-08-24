@@ -1,0 +1,220 @@
+.inicio {
+    -fx-font-family: "Ribeye";
+    -fx-font-size: 40px;
+}
+.labels2 {
+    -fx-font-family: "Monotype Corsiva";
+    -fx-font-size: 34px;
+}
+.labels3 {
+    -fx-font-family: "Lucida Fax";
+    -fx-font-size: 15px;
+    -fx-font-weight: bold
+    
+}
+.usuario {
+    -fx-background-image: url("usuario.png");
+}
+
+.fondobanner {
+    /*-fx-background-color: #336633;*/
+    /*-fx-border-color: #000033;*/
+      
+    -fx-background-image: url("banner.jpg");
+    -fx-background-size: stretch;
+     -fx-background-repeat: no-repeat;
+}
+
+.paneles {
+    -fx-border-color: #D00000;
+    -fx-background-color: #FFFFCC;
+    -fx-border-radius: 2px;
+}
+
+.botones {
+    -fx-background-color: #66CCCC;
+    -fx-border-color: #000;
+    -fx-border-radius: 2px;
+     
+}
+
+.fondo {
+    -fx-background-image: url("fondo.jpg") ;
+    -fx-background-size: stretch;
+	-fx-alignment: center;
+	-fx-background-position: 100%;
+  
+	
+}
+.StyleMenu{
+	-fx-background-color: 
+         rgba(147,206,222,1);
+}
+#rootBanner {
+   -fx-background-color: #3c7fb1;
+}
+#rootInicioSesion {
+   -fx-background-color: 
+        #3c7fb1,
+        linear-gradient(#fafdfe, #e8f5fc),
+        linear-gradient(#eaf6fd 0%, #d9f0fc 49%, #bee6fd 50%, #a7d9f5 100%);
+    -fx-background-insets: 0,1,2;
+    -fx-padding: 3 30 3 30;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-width:5;
+}
+.textFieldUsuario{
+	-fx-background-image:url('admin.png');
+  -fx-background-repeat: no-repeat;
+  -fx-background-position: right center;
+  
+}
+.textFieldClave{
+	-fx-background-image:url('lock.png');
+  -fx-background-repeat: no-repeat;
+  -fx-background-position: right center;
+  
+}
+.botonAceptar {
+	-fx-graphic: url("aceptar.png");
+}
+.botonguardar {
+	-fx-graphic: url("guardar.png");
+	-fx-background-color: transparent;
+    -fx-background-repeat: no-repeat;
+    
+   -fx-font-family: "Lucida Fax";
+    -fx-font-size: 15px;
+    -fx-font-weight: bold
+}
+.botonNuevo {
+	-fx-graphic: url("nuevo.png");
+	-fx-background-color: transparent;
+    -fx-background-repeat: no-repeat;
+    
+   -fx-font-family: "Lucida Fax";
+    -fx-font-size: 15px;
+    -fx-font-weight: bold
+}
+.botonCancelar {
+	-fx-graphic: url("cerrar");
+}
+.botonBuscar {
+	-fx-graphic: url("buscar.png");
+}
+
+.botonfactura {
+	-fx-graphic: url("factura.png");
+	-fx-background-color: transparent;
+    -fx-font-family: "Lucida Fax";
+    -fx-font-size: 10px;
+    -fx-font-weight: bold
+    
+}
+.botoncierre {
+	-fx-graphic: url("cierre.png");
+	-fx-background-color: transparent;
+   -fx-font-family: "Lucida Fax";
+    -fx-font-size: 10px;
+    -fx-font-weight: bold
+	
+	}
+.botonapertura {
+	-fx-graphic: url("apertura.png");
+	-fx-background-color: transparent;  
+   -fx-font-family: "Lucida Fax";
+    -fx-font-size: 10px;
+    -fx-font-weight: bold
+	
+	}
+	
+.botonbackup {
+	-fx-graphic: url("respaldo.png");
+	-fx-background-color: transparent;  
+   -fx-font-family: "Lucida Fax";
+    -fx-font-size: 10px;
+    -fx-font-weight: bold
+}
+
+.botonanadir{
+	-fx-graphic: url("siguiente.png");
+	-fx-background-color: transparent;
+    -fx-background-repeat: no-repeat;
+    
+   -fx-font-family: "Lucida Fax";
+    -fx-font-size: 10px;
+    -fx-font-weight: bold
+}
+.botonquitar {
+	-fx-graphic: url("anterior.png");
+	-fx-background-color: transparent;
+    -fx-background-repeat: no-repeat;
+    
+   -fx-font-family: "Lucida Fax";
+    -fx-font-size: 10px;
+    -fx-font-weight: bold
+}
+
+.botonaceptar {
+	-fx-graphic: url("ok.png");
+	-fx-background-color: transparent;
+    -fx-background-repeat: no-repeat;
+    
+   -fx-font-family: "Lucida Fax";
+    -fx-font-size: 10px;
+    -fx-font-weight: bold
+}
+.botoncancelar {
+	-fx-graphic: url("cancelar.png");
+	-fx-background-color: transparent;
+    -fx-background-repeat: no-repeat;
+    
+   -fx-font-family: "Lucida Fax";
+    -fx-font-size: 10px;
+    -fx-font-weight: bold
+}
+
+.anadircargas {
+	-fx-graphic: url("añadir_pers.png");
+	-fx-background-color: transparent;
+    -fx-background-repeat: no-repeat;
+}
+.eliminarcargas {
+	-fx-graphic: url("eliminar_pers.png");
+	-fx-background-color: transparent;
+    -fx-background-repeat: no-repeat;
+}
+
+.anadirdoc {
+	-fx-graphic: url("añadir_doc.png");
+	-fx-background-color: transparent;
+    -fx-background-repeat: no-repeat;
+}
+.eliminardoc {
+	-fx-graphic: url("eliminar_doc.png");
+	-fx-background-color: transparent;
+    -fx-background-repeat: no-repeat;
+}
+.imagenViewInicio{
+	-fx-background-image: url("sesiones.png");
+	-fx-background-size: stretch;
+	-fx-background-repeat: stretch;
+	-fx-alignment: center;
+}
+#border {
+		-fx-border-color: #848484;
+}
+
+#PrincipalPortada{
+	-fx-background-image: url("fondo_inicio.jpg");
+	-fx-background-size: stretch;
+	-fx-background-repeat: stretch;
+	
+}
+.Bordes{
+	-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+	-fx-padding: 10;
+	-fx-background-color: firebrick;
+	-fx-background-radius: 5;
+}

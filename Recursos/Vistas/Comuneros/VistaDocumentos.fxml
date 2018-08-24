@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.web.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="800.0" stylesheets="/estilo.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ec.com.controlador.VistaDocumentosController">
+   <children>
+      <GridPane layoutX="90.0" layoutY="78.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="50.0" minWidth="50.0" prefWidth="50.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="140.0" minWidth="140.0" prefWidth="140.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="80.0" minWidth="80.0" prefWidth="80.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="107.0" minWidth="50.0" prefWidth="65.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="20.0" minWidth="20.0" prefWidth="20.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="40.0" prefWidth="40.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="50.0" minWidth="50.0" prefWidth="50.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="110.0" prefWidth="110.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="110.0" minWidth="110.0" prefWidth="110.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="50.0" minWidth="50.0" prefWidth="50.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="50.0" minHeight="50.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="30.0" minHeight="30.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Código :" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label text="Nombre del Documento :" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="txt_codigo" editable="false" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+            </TextField>
+            <CheckBox fx:id="ch_estado" mnemonicParsing="false" text="Estado" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+            <Button fx:id="bt_cargar" mnemonicParsing="false" onAction="#examinar" text="Cargar" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+            <Button fx:id="bt_guardar" alignment="BOTTOM_CENTER" contentDisplay="TOP" ellipsisString="" graphicTextGap="0.0" maxHeight="95.0" minHeight="50.0" mnemonicParsing="false" prefHeight="95.0" prefWidth="100.0" styleClass="botonguardar" text="Guardar" GridPane.columnIndex="7" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.rowSpan="2" GridPane.valignment="CENTER" />
+            <Button fx:id="bt_nuevo" alignment="BOTTOM_CENTER" contentDisplay="TOP" ellipsisString="" graphicTextGap="0.0" maxHeight="95.0" minHeight="50.0" mnemonicParsing="false" onAction="#nuevo" prefHeight="95.0" prefWidth="100.0" styleClass="botonNuevo" text="Nuevo" GridPane.columnIndex="8" GridPane.halignment="RIGHT" GridPane.rowIndex="1" GridPane.rowSpan="2" GridPane.valignment="CENTER" />
+            <ComboBox fx:id="cb_documentos" prefHeight="25.0" prefWidth="167.0" GridPane.columnIndex="2" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+            <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="txt_ruta" GridPane.columnIndex="1" GridPane.columnSpan="3" GridPane.rowIndex="3" />
+            <Pane fx:id="p_documento" prefHeight="200.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.columnSpan="5" GridPane.rowIndex="5" GridPane.rowSpan="4" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,64 @@
+.StyleMenu{
+	-fx-background-color: 
+         rgba(147,206,222,1);
+}
+#rootBanner {
+   -fx-background-color: #3c7fb1;
+}
+#rootInicioSesion {
+   -fx-background-color: 
+        #3c7fb1,
+        linear-gradient(#fafdfe, #e8f5fc),
+        linear-gradient(#eaf6fd 0%, #d9f0fc 49%, #bee6fd 50%, #a7d9f5 100%);
+    -fx-background-insets: 0,1,2;
+    -fx-padding: 3 30 3 30;
+    -fx-background-radius: 10;
+    -fx-border-radius: 10;
+    -fx-border-width:5;
+}
+.textFieldUsuario{
+	-fx-background-image:url('admin.png');
+  -fx-background-repeat: no-repeat;
+  -fx-background-position: right center;
+  
+}
+.textFieldClave{
+	-fx-background-image:url('lock.png');
+  -fx-background-repeat: no-repeat;
+  -fx-background-position: right center;
+  
+}
+.botonAceptar {
+	-fx-graphic: url("aceptar.png");
+}
+.botonGrabar {
+	-fx-graphic: url("guardar.png");
+}
+.botonNuevo {
+	-fx-graphic: url("nuevo.png");
+}
+.botonCancelar {
+	-fx-graphic: url("cerrar.png");
+}
+.imagenViewInicio{
+	-fx-background-image: url("sesiones.png");
+	-fx-background-size: stretch;
+	-fx-background-repeat: stretch;
+	-fx-alignment: center;
+}
+#border {
+		-fx-border-color: #848484;
+}
+
+#PrincipalPortada{
+	-fx-background-image: url("fondo_inicio.jpg")  ;
+	-fx-background-size: stretch;
+	-fx-background-repeat: stretch;
+	
+}
+.Bordes{
+	-fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.8), 10, 0, 0, 0);
+	-fx-padding: 10;
+	-fx-background-color: firebrick;
+	-fx-background-radius: 5;
+}
