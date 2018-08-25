@@ -4,6 +4,8 @@ package ec.com.controlador;
 import java.io.File;
 import java.sql.Timestamp;
 import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.Period;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
@@ -28,6 +30,7 @@ import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.event.Event;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
@@ -294,6 +297,15 @@ public class VistaAfiliadosController {
 			}
 		});
 		
+		txt_fecha.setOnAction(new  EventHandler<ActionEvent>() {
+			@Override
+			public void handle(ActionEvent arg0) {
+				LocalDate fechNacimiento = txt_fecha.getValue();
+				LocalDate ahora = LocalDate.now();
+				Period periodo = Period.between(fechNacimiento, ahora);
+				txt_edad.setText(String.valueOf(periodo.getYears()));
+			}
+		});
 		
 	}
 

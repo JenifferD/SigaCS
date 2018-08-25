@@ -1,6 +1,9 @@
 package ec.com.controlador;
 
 import java.io.IOException;
+import java.text.DecimalFormat;
+import java.time.LocalDate;
+import java.time.Period;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
@@ -15,6 +18,8 @@ import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
+import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.ButtonType;
@@ -74,7 +79,21 @@ public class VistaPrediosController {
 			@Override
 			public void changed(ObservableValue<? extends String> observable, String oldValue, 
 					String newValue) {
-					txt_sur_a.setText(newValue);	
+					txt_sur_a.setText(newValue);
+					DecimalFormat formato1 = new DecimalFormat("#.00");
+					
+					if (txt_este_a.getText().equals(""))
+				    {
+					txt_area_total.setText(newValue);
+				    }
+					else
+					{
+						Double valor1 = Double.parseDouble(txt_norte_a.getText());				
+						Double valor2 = Double.parseDouble(txt_este_a.getText());
+					    Double resultado = valor1 * valor2 ;
+					    
+					    txt_area_total.setText(resultado.toString());
+					}		
 			}
 		});
 		
@@ -85,6 +104,14 @@ public class VistaPrediosController {
 					txt_oeste_a.setText(newValue);	
 			}
 		});
+		
+		txt_norte_a.setOnAction(new  EventHandler<ActionEvent>() {
+			@Override
+			public void handle(ActionEvent arg0) {
+
+			}
+		});
+		
 		
 		
 	}

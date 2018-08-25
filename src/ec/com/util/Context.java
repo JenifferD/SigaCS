@@ -26,7 +26,14 @@ public class Context {
 	private CsDocumento Documentos;
 	private CsAfiliado Afiliado;
 	private int codigo_afil;
+	private String ruc;
 	
+	public String getRuc() {
+		return ruc;
+	}
+	public void setRuc(String ruc) {
+		this.ruc = ruc;
+	}
 	
 	public int getCodigo_afil() {
 		return codigo_afil;

@@ -12,4 +12,14 @@ public class ComunaDAO extends ClaseDAO{
 		resultado = (List<Comuna>) query.getResultList();
 		return resultado;
 	}
+	
+	public List<Comuna> getMostrarComuna(String patron){
+		List<Comuna> resultado;
+		Query query = getEntityManager().createNamedQuery("Comuna.MostrarComuna");
+		query.setHint("javax.persistence.cache.storeMode", "REFRESH");
+		query.setParameter("patron", patron);
+		resultado = (List<Comuna>) query.getResultList();
+		return resultado;
+	}
+	
 }

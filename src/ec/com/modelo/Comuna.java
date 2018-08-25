@@ -9,7 +9,11 @@ import javax.persistence.*;
  * 
  */
 @Entity
-@NamedQuery(name="Comuna.findAll", query="SELECT c FROM Comuna c")
+@Table(name="comuna")
+@NamedQueries({
+@NamedQuery(name="Comuna.findAll", query="SELECT c FROM Comuna c"),
+@NamedQuery(name="Comuna.MostrarComuna", query="SELECT c FROM Comuna c where c.comuRuc = (:patron) "),
+})
 public class Comuna implements Serializable {
 	private static final long serialVersionUID = 1L;
 
@@ -34,7 +38,7 @@ public class Comuna implements Serializable {
 	private String comuEstado;
 
 	@Column(name="comu_logo")
-	private byte[] comuLogo;
+	private String comuLogo;
 
 	@Column(name="comu_razon_soc")
 	private String comuRazonSoc;
@@ -96,11 +100,11 @@ public class Comuna implements Serializable {
 		this.comuEstado = comuEstado;
 	}
 
-	public byte[] getComuLogo() {
+	public String getComuLogo() {
 		return this.comuLogo;
 	}
 
-	public void setComuLogo(byte[] comuLogo) {
+	public void setComuLogo(String comuLogo) {
 		this.comuLogo = comuLogo;
 	}
 

@@ -78,7 +78,7 @@
                                        <GridPane.margin>
                                           <Insets right="40.0" />
                                        </GridPane.margin></TextField>
-                                    <TextField fx:id="txt_sur_a" GridPane.columnIndex="5" GridPane.rowIndex="5">
+                                    <TextField fx:id="txt_sur_a" editable="false" GridPane.columnIndex="5" GridPane.rowIndex="5">
                                        <GridPane.margin>
                                           <Insets right="40.0" />
                                        </GridPane.margin></TextField>
@@ -86,7 +86,7 @@
                                        <GridPane.margin>
                                           <Insets right="40.0" />
                                        </GridPane.margin></TextField>
-                                    <TextField fx:id="txt_oeste_a" GridPane.columnIndex="5" GridPane.rowIndex="7">
+                                    <TextField fx:id="txt_oeste_a" editable="false" GridPane.columnIndex="5" GridPane.rowIndex="7">
                                        <GridPane.margin>
                                           <Insets right="40.0" />
                                        </GridPane.margin></TextField>
